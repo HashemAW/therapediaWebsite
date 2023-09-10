@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'Como';
+  src:  url(../fonts/Como.ttf) format('truetype');
+  font-weight: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Como SemiBold';
+  src: url(../fonts/Como-SemiBold.ttf) format('truetype');
+  font-weight: semibold;
+}
+
+
+@font-face {
+  font-family: 'Como Medium';
+  src: url(../fonts/Como-Medium.ttf) format('truetype');
+  font-weight: meduim;
+}
+
+
+@font-face {
+  font-family: 'Como Light';
+  src: url(../fonts/Como-Light.ttf) format('truetype');
+  font-weight: light;
+}
+
+
+@font-face {
+  font-family: 'Como Heavy';
+  src: url(../fonts/Como-Heavy.ttf) format('truetype');
+  font-weight: heavy;
+}
+
+
+@font-face {
+  font-family: 'Como Extra Light';
+  src: url(../fonts/Como-ExtraLight.ttf) format('truetype');
+  font-weight: lighter;
+}
+
+
+@font-face {
+  font-family: 'Como Extra Bold';
+  src: url(../fonts/Como-ExtraBold.ttf) format('truetype');
+  font-weight: bolder;
+}
+
+
+@font-face {
+  font-family: 'Como Bold';
+  src: url(../fonts/Como-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--primary-color);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+[dir='rtl'] select{
+  appearance: none;
+  background-image:url('data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjMEY0MTJFIiBoZWlnaHQ9IjgwMHB4IiB3aWR0aD0iODAwcHgiIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAzMzAgMzMwIiB4bWw6c3BhY2U9InByZXNlcnZlIiBzdHJva2U9IiMwRjQxMkUiPgoNPGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiLz4KDTxnIGlkPSJTVkdSZXBvX3RyYWNlckNhcnJpZXIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoNPGcgaWQ9IlNWR1JlcG9faWNvbkNhcnJpZXIiPiA8cGF0aCBpZD0iWE1MSURfMjI1XyIgZD0iTTMyNS42MDcsNzkuMzkzYy01Ljg1Ny01Ljg1Ny0xNS4zNTUtNS44NTgtMjEuMjEzLDAuMDAxbC0xMzkuMzksMTM5LjM5M0wyNS42MDcsNzkuMzkzIGMtNS44NTctNS44NTctMTUuMzU1LTUuODU4LTIxLjIxMywwLjAwMWMtNS44NTgsNS44NTgtNS44NTgsMTUuMzU1LDAsMjEuMjEzbDE1MC4wMDQsMTUwYzIuODEzLDIuODEzLDYuNjI4LDQuMzkzLDEwLjYwNiw0LjM5MyBzNy43OTQtMS41ODEsMTAuNjA2LTQuMzk0bDE0OS45OTYtMTUwQzMzMS40NjUsOTQuNzQ5LDMzMS40NjUsODUuMjUxLDMyNS42MDcsNzkuMzkzeiIvPiA8L2c+Cg08L3N2Zz4=');
+  background-repeat: no-repeat;
+  background-position: left 1.2rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+
+[dir='ltr'] select{
+  appearance: none;
+  background-image:url('data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyBmaWxsPSIjMEY0MTJFIiBoZWlnaHQ9IjgwMHB4IiB3aWR0aD0iODAwcHgiIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAzMzAgMzMwIiB4bWw6c3BhY2U9InByZXNlcnZlIiBzdHJva2U9IiMwRjQxMkUiPgoNPGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiLz4KDTxnIGlkPSJTVkdSZXBvX3RyYWNlckNhcnJpZXIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoNPGcgaWQ9IlNWR1JlcG9faWNvbkNhcnJpZXIiPiA8cGF0aCBpZD0iWE1MSURfMjI1XyIgZD0iTTMyNS42MDcsNzkuMzkzYy01Ljg1Ny01Ljg1Ny0xNS4zNTUtNS44NTgtMjEuMjEzLDAuMDAxbC0xMzkuMzksMTM5LjM5M0wyNS42MDcsNzkuMzkzIGMtNS44NTctNS44NTctMTUuMzU1LTUuODU4LTIxLjIxMywwLjAwMWMtNS44NTgsNS44NTgtNS44NTgsMTUuMzU1LDAsMjEuMjEzbDE1MC4wMDQsMTUwYzIuODEzLDIuODEzLDYuNjI4LDQuMzkzLDEwLjYwNiw0LjM5MyBzNy43OTQtMS41ODEsMTAuNjA2LTQuMzk0bDE0OS45OTYtMTUwQzMzMS40NjUsOTQuNzQ5LDMzMS40NjUsODUuMjUxLDMyNS42MDcsNzkuMzkzeiIvPiA8L2c+Cg08L3N2Zz4=');
+  background-repeat: no-repeat;
+  background-position: right 1.2rem top 50%;
+  background-size: 0.65rem auto;
+}
